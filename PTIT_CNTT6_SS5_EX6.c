@@ -25,7 +25,7 @@ float a,b,sum;
             printf("ket qua cua ban la : %.0f",sum);
             break;
         case '/':
-            if(a==0,b==0) {
+            if(a==0||b==0) {
                 printf("khong the chia cho 0");
             }else if (a<b){
                 printf("phep toan nay kho");
