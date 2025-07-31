@@ -1,16 +1,22 @@
-#include<stdio.h>
-int main(){
-int a,b;
-int max;
+#include <stdio.h>
 
-scanf("%d %d",&a,&b);
-     if(a>b){
-    max=a;
-    }else{
-      max=b;
+int main() {
+    int a, b;
+    int max;
+
+    
+    printf("Nhap so thu nhat: ");
+    scanf("%d", &a);
+    printf("Nhap so thu hai: ");
+    scanf("%d", &b);
+
+    if (a > b) {
+        printf("%d la so lon nhat\n", a);
+    } else if (a < b) {
+        printf("%d la so lon nhat\n", b);
+    } else {
+        printf("Hai so bang nhau: %d\n", a);
     }
-printf("%d la so lon nhat",max);
 
-
-return 0;
+    return 0;
 }
