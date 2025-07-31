@@ -4,6 +4,9 @@ float score;
     printf("Enter the score :");
     scanf("%f",&score);
 
+if (score<0||score>10) {
+    printf("Wrong score");
+}else {
     if (score>=8) {
         printf("hoc sinh gioi");
     }else if (score>=6.5) {
@@ -15,5 +18,9 @@ float score;
     }else {
         printf("kho dien ta");
     }
+}
+
+
+
 return 0;
 }
